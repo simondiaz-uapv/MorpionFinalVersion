@@ -1,0 +1,101 @@
+
+.error-text-field{
+    -fx-border-color: red;
+    -fx-border-width: 1px;
+    -fx-border-radius: 3px;
+}
+
+.slider {
+    -fx-padding: 10px;
+}
+
+.slider .track {
+    -fx-background-color: #C8AD7F; /* couleur de fond de la piste */
+    -fx-background-radius: 10;
+    -fx-background-insets: 0 0 1 0;
+    -fx-height: 8.0px; /* hauteur de la piste */
+}
+
+.slider .thumb {
+    -fx-background-color: #C8AD7F; /* couleur du bouton (thumb) */
+    -fx-background-radius: 15;
+    -fx-background-insets: 0;
+    -fx-shape: "M 15 0 A 15 15 0 1 1 15 30 A 15 15 0 1 1 15 0 Z"; /* forme circulaire */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0);
+}
+
+.slider:focused .thumb {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,255,0.8), 5, 0, 0, 0); /* ombre bleue lors du focus */
+}
+
+.slider .thumb:hover {
+    -fx-background-color: #C8AD7F; /* couleur du thumb lors du survol */
+}
+
+.slider .filled-track {
+    -fx-background-color:  #556B2F; /* couleur de la piste remplie */
+    -fx-background-radius: 10;
+}
+
+.combo-box {
+    -fx-padding: 5px;
+    -fx-background-color: #B7D3ED; /* Bleu clair pour le fond général */
+    -fx-background-radius: 5;
+    -fx-border-color: #C8AD7F; /* Beige pour la bordure */
+    -fx-border-radius: 5;
+    -fx-border-width: 2px;
+}
+
+.combo-box .list-cell {
+    -fx-padding: 5px;
+    -fx-background-color: transparent; /* Fond transparent pour les éléments de la liste */
+}
+
+.combo-box .list-cell:filled:selected, .combo-box .list-cell:filled:selected:hover {
+    -fx-background-color: #C8AD7F; /* Beige pour l'élément sélectionné */
+    -fx-text-fill: #FFFFFF; /* Texte blanc pour l'élément sélectionné */
+}
+
+.combo-box .list-cell:hover {
+    -fx-background-color: #B7D3ED; /* Bleu légèrement plus foncé au survol */
+}
+
+.combo-box .button {
+    -fx-background-color: #B7D3ED;
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 5, 4, 3;
+    -fx-padding: 5px 10px 5px 10px;
+    -fx-text-fill: #2F4F4F; /* Un gris foncé pour contraster */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 3, 0, 0, 0);
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: #FFFFFF; /* Fond blanc pour la liste déroulante */
+    -fx-background-radius: 5;
+    -fx-border-color: #C8AD7F; /* Bordure beige pour la liste déroulante */
+    -fx-border-radius: 5;
+}
+
+
+.list-view {
+    -fx-background-color: #B7D3ED; /* Bleu clair pour le fond de la ListView */
+    -fx-border-color: #C8AD7F; /* Beige pour la bordure */
+    -fx-border-radius: 5;
+    -fx-border-width: 2px;
+    -fx-padding: 5px;
+}
+
+.list-view .list-cell {
+    -fx-padding: 10px;
+    -fx-background-color: transparent; /* Fond transparent pour les cellules */
+    -fx-text-fill: #2F4F4F; /* Texte gris foncé pour contraster avec le fond bleu */
+}
+
+.list-view .list-cell:filled:selected, .list-view .list-cell:filled:selected:hover {
+    -fx-background-color: #C8AD7F; /* Beige pour la cellule sélectionnée */
+    -fx-text-fill: #FFFFFF; /* Texte blanc pour une meilleure visibilité */
+}
+
+.list-view .list-cell:hover {
+    -fx-background-color: #A6C9E2; /* Un bleu légèrement plus foncé pour le survol */
+}

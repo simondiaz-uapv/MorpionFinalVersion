@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" style="-fx-background-color: #B7D3ED;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.application.maven.GameControllerPVIA">
+    <center>
+        <GridPane fx:id="gameGrid" gridLinesVisible="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="300.0" minWidth="300.0" prefHeight="400.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="200.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <ImageView fx:id="case0_1" fitHeight="135.0" fitWidth="135.0" onMouseClicked="#OnClick0_1" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" />
+                <ImageView fx:id="case0_2" fitHeight="135.0" fitWidth="135.0" onMouseClicked="#OnClick0_2" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" />
+                <ImageView fx:id="case1_0" fitHeight="135.0" fitWidth="135.0" onMouseClicked="#OnClick1_0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <ImageView fx:id="case0_0" fitHeight="135.0" fitWidth="135.0" onMouseClicked="#OnClick0_0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" />
+                <ImageView fx:id="case1_1" fitHeight="135.0" fitWidth="135.0" onMouseClicked="#OnClick1_1" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                <ImageView fx:id="case1_2" fitHeight="135.0" fitWidth="135.0" onMouseClicked="#OnClick1_2" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                <ImageView fx:id="case2_0" fitHeight="135.0" fitWidth="135.0" onMouseClicked="#OnClick2_0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <ImageView fx:id="case2_1" fitHeight="135.0" fitWidth="135.0" onMouseClicked="#OnClick2_1" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                <ImageView fx:id="case2_2" fitHeight="135.0" fitWidth="135.0" onMouseClicked="#OnClick2_2" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                <Line fx:id="line1" endX="100.0" startX="495.0" startY="-0.5711708068847656" stroke="#eb0c0c" strokeWidth="5.0" visible="false" GridPane.columnIndex="1" />
+                <Line fx:id="line2" endX="45.0" endY="1545.7802734375" startX="45.0" startY="1151.2802734375" stroke="#eb0c0c" strokeWidth="5.0" translateY="132.0" visible="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                <Line fx:id="line3" endX="45.0" endY="1545.7802734375" startX="45.0" startY="1151.2802734375" stroke="#eb0c0c" strokeWidth="5.0" translateY="132.0" visible="false" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+                <Line fx:id="line4" endX="45.0" endY="1545.7802734375" startX="45.0" startY="1151.2802734375" stroke="#eb0c0c" strokeWidth="5.0" translateY="132.0" visible="false" GridPane.columnIndex="3" GridPane.halignment="CENTER" />
+                <Line fx:id="line5" endX="100.0" startX="495.0" startY="-0.5711708068847656" stroke="#eb0c0c" strokeWidth="5.0" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <Line fx:id="line6" endX="100.0" startX="495.0" startY="-0.5711708068847656" stroke="#eb0c0c" strokeWidth="5.0" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <Line fx:id="line7" endX="555.9827880859375" endY="695.5430908203125" rotate="167.4" startX="255.37322998046875" startY="223.6077880859375" stroke="#eb0c0c" strokeWidth="5.0" translateX="-219.0" translateY="-129.0" visible="false" GridPane.columnIndex="3" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                <Line fx:id="line8" endX="1057.127685546875" endY="1365.892333984375" rotate="78.7" startX="748.8928833007812" startY="898.4788818359375" stroke="#eb0c0c" strokeWidth="5.0" translateX="-90.0" translateY="135.0" visible="false" GridPane.columnIndex="2" />
+            </children>
+        </GridPane>
+    </center>
+    <!-- Utilisation d'une VBox pour centrer verticalement le label de victoire -->
+    <top>
+        <VBox alignment="CENTER" minHeight="100.0" minWidth="705.0">
+            <children>
+                <Label fx:id="victoryLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="327.0" style="-fx-background-color: #C8AD7F;" text="LABEL" textAlignment="CENTER" visible="false">
+                    <font>
+                        <Font name="Monocraft" size="20.0" />
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+    </top>
+    <!-- Utilisation d'une HBox pour centrer horizontalement le label de tour -->
+    <bottom>
+        <HBox alignment="CENTER" minHeight="100.0" minWidth="705.0">
+            <children>
+                <Label fx:id="turnLabel" contentDisplay="CENTER" text="Label" textAlignment="CENTER" visible="false">
+                    <font>
+                        <Font name="Monocraft" size="18.0" />
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+    </bottom>
+    <right>
+        <VBox alignment="CENTER" minHeight="405.0" minWidth="180.0" prefHeight="200.0" prefWidth="180.0">
+            <children>
+                <Button fx:id="restartButton" contentDisplay="CENTER" mnemonicParsing="false" onAction="#returnToMainMenu" style="-fx-background-color: #C8AD7F;" text="Play again" visible="false">
+                    <font>
+                        <Font name="Monocraft" size="20.0" />
+                    </font>
+                </Button>
+            </children>
+        </VBox>
+    </right>
+    <left>
+        <VBox alignment="CENTER" minHeight="405.0" minWidth="180.0" prefHeight="200.0" prefWidth="180.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="returnToMain" alignment="CENTER" contentDisplay="CENTER" layoutY="100.0" mnemonicParsing="false" onAction="#returnToMainMenu" prefWidth="171.0" style="-fx-background-color: #C8AD7F;" text="Main menu" textAlignment="CENTER" translateX="50.0">
+                    <font>
+                        <Font name="Monocraft" size="20.0" />
+                    </font>
+                </Button>
+            </children></VBox>
+    </left>
+</BorderPane>
